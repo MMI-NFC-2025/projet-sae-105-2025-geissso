@@ -1,15 +1,5 @@
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 header {
     background: linear-gradient(135deg, #b896d1 0%, #9b7bb5 100%);
     padding: 20px 24px;
