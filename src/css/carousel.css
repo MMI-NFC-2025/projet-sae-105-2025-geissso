@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+  overflow-x: hidden;        /* le wrapper ne scrolle pas */
+}
+
+.carousel__container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;          /* c’est CE conteneur qui scrolle */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;   /* bonus : smooth au clavier/souris */
+  padding: 0 24px;           /* remplace tes margins négatifs */
+}
+
+.carousel__item {
+  flex: 0 0 auto;            /* pas de rétrécissement */
+  scroll-snap-align: start;
+  /* Donne une largeur visible à chaque item : */
+  width: 260px;              /* ou min-width: 260px; */
+}
+
+.carousel__item img {
+  display: block;
+  width: 120%;
+  height: auto;
+}
+
+.carousel__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 16px 16px;
+  pointer-events: none;     
+}
+
+.carousel__button {
+  pointer-events: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}

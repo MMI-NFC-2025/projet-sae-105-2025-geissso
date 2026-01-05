@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA GRILLE INVISIBLE</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+  <script src="/src/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Oi&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/icones/LOGO.svg" alt="Logo">
+    </a>
+
+    <div class="header-right">
+      <a href="/en/" class="lang-link">EN</a>
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <img src="/assets/icones/menu.svg" alt="Menu-icone">
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/a_propos.html">A propos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/effet_matilda.html">Effet Matilda</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/diane_holl.html">Diane Holl</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/f1_academy.html">F1 Academy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/stereotype.html">Stéréotypes & Médias</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/theorie.html">Une théorie</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/films_series.html">Films/ Séries</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/contacter.html">Nous Contacter</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <section class="hero">
+    <img src="/assets/img/home_back.webp" alt="Effet Matilda" class="hero-image">
+    <div class="hero-banner">
+      <h1>L'EFFET MATILDA</h1>
+    </div>
+  </section>
+
+    <section class="matilda-card">
+        <div class="matilda-card__inner">
+            <div class="matilda-card__content">
+                <p class="matilda-card__paragraph">
+                    <strong>L’effet Matilda</strong> désigne un phénomène bien réel : les découvertes
+                    faites par des femmes sont souvent attribuées à leurs collègues masculins.
+                    Le terme vient de Matilda Joslyn Gage, une féministe américaine du XIX<sup>e</sup> siècle,
+                    qui dénonçait déjà cette invisibilisation.
+                </p>
+
+                <p class="matilda-card__paragraph">
+                    De Rosalind Franklin, éclipsée dans la découverte de l’ADN, à
+                    <strong>Jocelyn Bell Burnell</strong>, privée du Nobel pour la découverte des pulsars,
+                    de nombreuses scientifiques ont vu leur travail minimisé ou effacé.
+                </p>
+            </div>
+
+            <a href="/fr/effet_matilda.html" class="matilda-card__button">EN SAVOIR PLUS</a>
+        </div>
+    </section>
+
+    <section class="stats-combien">
+        <div class="stats-combien__inner">
+            <div class="stats-combien__header">
+                <div class="stats-combien__header-label">
+                    COMBIEN ?
+                </div>
+            </div>
+
+            <div class="stats-combien__body">
+                <div class="stats-combien__body-top-line"></div>
+
+               <div class="stats-combien__stats">
+                    <article class="stats-combien__stat">
+                        <span class="stats-combien__value">1%</span>
+                        <p class="stats-combien__caption">
+                            Femmes Dans Le Sport Automobile
+                        </p>
+                    </article>
+
+                    <article class="stats-combien__stat stats-combien__stat--right">
+                        <span class="stats-combien__value">150</span>
+                        <p class="stats-combien__caption">
+                            Femmes Dans Le Sport Automobile
+                        </p>
+                    </article>
+                </div>
+
+
+                <div class="stats-combien__footer">
+                    <div class="stats-combien__footer-line"></div>
+                    <button class="stats-combien__button" type="button">
+                        <span class="stats-combien__button-label">PLUS D’INFO</span>
+                        <span class="stats-combien__button-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="who">
+  <div class="who__inner">
+    <div class="who__header">
+      <div class="who__header-label">
+        QUI SONT-ELLES?
+      </div>
+    </div>
+
+    <div class="carousel" aria-labelledby="carousel-heading">
+      <div class="carousel__container" role="region" aria-live="polite">
+        <div class="carousel__item">
+          <img src="/assets/img/carrousel_1.webp" alt="Doriane pin" />
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/carrousel_2.webp" alt="Michelle Mouton" />
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/carrousel_3.webp" alt="Jamie Chadwick" />
+        </div>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+          <img src="/assets/icones/arrow_left.svg" alt="fleche gauche" />
+        </button>
+        <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+          <img src="/assets/icones/arrow_right.svg" alt="fleche droite" />
+        </button>
+      </div>
+    </div>
+    <div class="who__footer">
+      <p class="who__description">
+        Longtemps considéré comme un milieu exclusivement masculin, le sport automobile s’ouvre peu à peu aux femmes, bien que leur place y reste encore fragile.
+        De la direction technique aux stands, en passant par le pilotage et l’ingénierie, elles sont de plus en plus…
+      </p>
+
+      <button class="who__arrow-bottom" type="button" aria-label="Faire défiler vers la suite">
+        <img src="/assets/icones/arrow_down.svg" alt="flèche vers le bas" />
+      </button>
+    </div>
+  </div>
+</section>
+<section class="articles">
+  <div class="articles__inner">
+    <div class="articles__header">
+      <div class="articles__header-label">Nos articles</div>
+    </div>
+
+    <div class="articles__body">
+      <div class="articles__body-top-line"></div>
+
+      <div class="articles__list">
+        <!-- Card 1 -->
+        <article class="article-card" tabindex="0">
+          <div class="article-card__media">
+            <img src="/assets/img/dianeholl_article1.webp" alt="Diane Holl, ingénieure dans le sport automobile" />
+            <div class="article-card__overlay"></div>
+            <div class="article-card__content">
+              <h3 class="article-card__title">Diane Holl</h3>
+              <p class="article-card__subtitle">Ingénieure en sport automobile</p>
+              <p class="article-card__intro">
+                Portrait d’une ingénieure qui a marqué la F1 par son expertise et son parcours inspirant.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <img src="/assets/icones/separateur.svg" alt="Séparateur décoratif" class="article-separator" />
+
+        <!-- Card 2 -->
+        <article class="article-card" tabindex="0">
+          <div class="article-card__media">
+            <img src="/assets/img/f1academy_article2.webp" alt="Pilotes de la F1 Academy" />
+            <div class="article-card__overlay"></div>
+            <div class="article-card__content">
+              <h3 class="article-card__title">F1 Academy</h3>
+              <p class="article-card__subtitle">La relève féminine du sport auto</p>
+              <p class="article-card__intro">
+                Une filière pensée pour révéler et accompagner la nouvelle génération de pilotes.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <img src="/assets/icones/separateur.svg" alt="Séparateur décoratif" class="article-separator" />
+
+        <!-- Card 3 -->
+        <article class="article-card" tabindex="0">
+          <div class="article-card__media">
+            <img src="/assets/img/stereotype_book.webp" alt="Livre Sexe et stéréotypes de genre dans les médias" />
+            <div class="article-card__overlay"></div>
+            <div class="article-card__content">
+              <h3 class="article-card__title">Stéréotypes & Médias</h3>
+              <p class="article-card__subtitle">Regards critiques</p>
+              <p class="article-card__intro">
+                Comment les représentations médiatiques façonnent et perpétuent les biais de genre.
+              </p>
+            </div>
+          </div>
+        </article>
+         <img src="/assets/icones/separateur.svg" alt="Séparateur décoratif" class="article-separator" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="newsletter" id="newsletter">
+  <div class="newsletter__inner">
+    <form class="newsletter__form" novalidate>
+      <label for="nl-email" class="sr-only">Votre adresse mail</label>
+
+      <div class="newsletter__field">
+        <input
+          type="email"
+          id="nl-email"
+          class="newsletter__input"
+          placeholder="Votre adresse mail"
+          required
+          autocomplete="email"
+        />
+      </div>
+
+      <button type="submit" class="newsletter__btn">Envoyer</button>
+    </form>
+
+    <p class="newsletter__msg" role="status" aria-live="polite"></p>
+  </div>
+</section>
+<section class="footer">
+  <div class="footer__inner">
+
+    <!-- Liens du haut -->
+    <nav class="footer__links">
+      <a href="/fr/a_propos.html">A propos</a>
+      <a href="/fr/termes.html">Termes et conditions</a>
+      <a href="/fr/donnees_privees.html">Données privées</a>
+    </nav>
+
+    <!-- Icônes réseaux sociaux -->
+    <div class="footer__socials">
+      <a href="#" aria-label="Facebook">
+        <img src="/assets/icones/Facebook-Icon.svg" alt="facebook icone">
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img src="/assets/icones/Twitter-Icon.svg" alt="twitter icone">
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img src="/assets/icones/Youtube-Icon.svg" alt="youtube icone">
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <img src="/assets/icones/LinkedIn.svg" alt="linkedin icone">
+      </a>
+    </div>
+
+    <!-- Ligne séparatrice -->
+    <div class="footer__separator"></div>
+
+    <!-- Bas du footer -->
+    <div class="footer__legal">
+      <p>@ 2025 Lorems</p>
+      <p>Tous droits réservés</p>
+      <p>GEISS Solène C1</p>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
