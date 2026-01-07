@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :GEISS
+- PRÉNOM :Solène
+- GROUPE : C1
+- URL du site : https://sae-105.geiss-solene.fr/
+- URL FIGMA : https://www.figma.com/design/MBLOS0VGrkzcv3wIsEjgKw/PROJET-S1?node-id=232-393&t=XUdaQGHkgc5ErnZt-1

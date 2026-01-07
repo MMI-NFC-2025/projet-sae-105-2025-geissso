@@ -3,68 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A propos - LA GRILLE INVISIBLE</title>
+  <title>A propos – LA GRILLE INVISIBLE</title>
 
   <link rel="stylesheet" href="/src/css/style.css">
-  <script src="/src/js/script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Oi&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    
-    <a href="/fr/" class="logo-link">
-      <img src="/assets/icones/LOGO.svg" alt="Logo">
-    </a>
 
-    <div class="header-right">
-      <a href="/en/" class="lang-link">EN</a>
-      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-        <img src="/assets/icones/menu.svg" alt="Menu-icone">
-      </button>
+<header>
+  <a href="/fr/" class="logo-link">
+    <img src="/assets/icones/LOGO.svg" alt="Logo">
+  </a>
 
-      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/a_propos.html">A propos</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/effet_matilda.html">Effet Matilda</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/diane_holl.html">Diane Holl</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/f1_academy.html">F1 Academy</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/stereotype.html">Stéréotypes & Médias</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/theorie.html">Une théorie</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/films_series.html">Films/ Séries</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/contacter.html">Nous Contacter</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/fr/autres_projets.html">Autres Projets</a>
-          </li>
-        </ul>
-      </nav>
+  <div class="header-right">
+    <a href="/en/" class="lang-link">EN</a>
+    <button class="header__menu-btn menu-btn" aria-label="menu">
+      <img src="/assets/icones/menu.svg" alt="Menu">
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="f1-hero" style="--hero-img: url('/assets/img/about_back.webp');">
+  <a class="f1-hero__back" href="/fr/">
+    <img src="/assets/icones/arrow_left_white.svg" alt="Retour">
+  </a>
+
+  <div class="f1-hero__overlay"></div>
+
+  <div class="f1-hero__content">
+    <h1 class="f1-hero__title">A propos</h1>
+  </div>
+
+  <div class="f1-hero__bottom-cap">
+    <div class="f1-hero__bottom-cap-inner"></div>
+  </div>
+</section>
+
+<!-- SECTION FONDATRICE -->
+<section class="apropos-section">
+
+  <h2 class="apropos-section__title">A propos</h2>
+
+  <article class="apropos-founder">
+
+    <!-- TEXTE HAUT -->
+    <div class="apropos-founder__intro">
+      <h3 class="apropos-founder__name">Solène, fondatrice du site</h3>
+      <p>
+        Je m’appelle Solène, étudiante passionnée par le design, la communication
+        et le sport automobile. Ce site est né pour parler d’un sujet encore trop
+        méconnu : <strong>la place des femmes au sein du sport automobile</strong>.
+      </p>
     </div>
-  </header>
-        <section class="hero">
-    <img src="/assets/img/about_back.webp" alt="A propos" class="hero-image">
-    <div class="hero-banner">
-      <h1>L'EFFET MATILDA</h1>
-    </div>
-  </section>
 
-    </body>
+    <!-- TEXTE + IMAGE -->
+    <div class="apropos-founder__main">
+
+      <div class="apropos-founder__col">
+        <p>
+          Depuis toujours, je suis fascinée par la détermination et le talent
+          de celles qui osent évoluer dans des milieux dominés par les hommes.
+          Mais au fil du temps, j’ai constaté que la reconnaissance ne suit pas
+          toujours leurs exploits.
+        </p>
+      </div>
+
+      <div class="apropos-founder__photo">
+        <img src="/assets/img/about_1.webp" alt="Solène, fondatrice du site">
+      </div>
+
+    </div>
+
+    <!-- TEXTE BAS -->
+    <div class="apropos-founder__outro">
+      <p>
+        À travers ce site, je souhaite mettre en lumière ces parcours,
+        déconstruire les stéréotypes et redonner de la visibilité
+        à celles dont le travail est trop souvent effacé.
+      </p>
+    </div>
+
+  </article>
+
+</section>
+
+<!-- IMAGE MANIFESTATION -->
+<figure class="apropos-figure">
+  <img src="/assets/img/about_2.webp" alt="Manifestation #MeToo">
+  <figcaption>Photographie d’une manifestation suite au mouvement #MeToo</figcaption>
+</figure>
+
+<!-- QUESTION DE PARITÉ -->
+<section class="apropos-section">
+  <h2 class="apropos-section__title">Une question de parité et de regard</h2>
+
+  <p>
+    Parler des femmes dans le sport automobile, ce n’est pas opposer les genres.
+    C’est rétablir un équilibre.
+  </p>
+
+  <p>
+    La parité ne signifie pas performance identique,
+    mais égalité des chances, des moyens et de la reconnaissance.
+  </p>
+</section>
+
+<!-- EXEMPLE -->
+<figure class="apropos-figure">
+  <img src="/assets/img/about_3.webp" alt="Femmes dans le paddock">
+  <figcaption>Femmes professionnelles dans le paddock automobile</figcaption>
+</figure>
+
+<!-- MESSAGE -->
+<section class="apropos-section">
+  <h2 class="apropos-section__title">Un message à nous faire passer ?</h2>
+
+  <p>
+    Un témoignage, un avis, une suggestion ?
+    Ce site se veut collaboratif et évolutif.
+  </p>
+
+  <a href="/fr/contacter.html" class="apropos-btn">Nous contacter</a>
+</section>
+
+</main>
+
+</body>
 </html>
