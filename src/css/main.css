@@ -173,7 +173,7 @@ html, body {
 .stats-combien__value {
     display: inline-block;
     font-family: Libre Caslon Text, serif;
-    font-weight: 800;
+    font-weight: var(--font-weight-black);
     font-size: 40px;
     line-height: 1;
     padding: 0 4px 6px;
@@ -212,7 +212,7 @@ html, body {
     cursor: pointer;
     font-family: var(--font-body);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
@@ -300,7 +300,7 @@ html, body {
   text-transform: uppercase;
   color: var(--color-primary);
   text-align: left;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 .drivers__header::after {
@@ -396,7 +396,7 @@ html, body {
   padding: 8px 20px;
   font-family: var(--font-body);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: var(--font-weight-black);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-bg-white);
@@ -662,7 +662,7 @@ html, body {
     font-family: var(--font-heading);
     font-size: 24px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 .article-card__subtitle {
@@ -797,7 +797,7 @@ html, body {
   background: var(--color-secondary);
   color: var(--color-primary);
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 12px;
   letter-spacing: .6px;
   text-transform: uppercase;
@@ -897,7 +897,7 @@ html, body {
 .effet_matilda-hero__title {
   margin: 0;
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
   line-height: .95;
   letter-spacing: 2px;
@@ -969,11 +969,10 @@ html, body {
 .effet_matilda-intro__label {
   font-family: var(--font-body), light;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: var(--font-weight-normal);
   letter-spacing: 1px;
   color: var(--color-secondary);            
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 /* Ligne fine */
@@ -988,7 +987,7 @@ html, body {
 .effet_matilda-intro__title {
   margin: 0 0 18px;
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   font-size: clamp(28px, 8vw, 44px);
   line-height: 1.04;
   letter-spacing: 0.6px;
@@ -1011,7 +1010,7 @@ html, body {
 }
 
 .effet_matilda-intro__content p strong {
-  font-weight: 800;
+  font-weight: var(--font-weight-black);
 }
 
 /* Petites tailles */
@@ -1078,7 +1077,7 @@ html, body {
 .f1-hero__title {
   margin: 0;
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
   line-height: .95;
   letter-spacing: 2px;
@@ -1133,7 +1132,7 @@ html, body {
 .f1a-header__logo img{ height: 26px; display:block; }
 .f1a-header__right{ display:flex; align-items:center; gap:14px; }
 .f1a-header__lang{
-  font-weight: 800;
+  font-weight: var(--font-weight-black);
   color: var(--color-bg-white);
   text-decoration:none;
   letter-spacing: 1px;
@@ -1182,7 +1181,7 @@ html, body {
 .f1a-hero__title{
   margin:0;
   font-family:var(--font-heading);
-  font-weight:400;
+  font-weight:var(--font-weight-normal);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-text-lightest, #F7F3FC);
@@ -1252,7 +1251,7 @@ html, body {
   line-height: 1.05;
   color:var(--color-primary);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 /* Video */
@@ -1335,7 +1334,7 @@ html, body {
 .f1a-footer__links a{
   color:var(--color-bg-white);
   text-decoration:none;
-  font-weight:700;
+  font-weight:var(--font-weight-bold);
   font-size: 16px;
   font-family: var(--font-body);
 }
@@ -1408,7 +1407,7 @@ html, body {
   bottom:80px; left:16px;
   font-family:"Oi", cursive;
   font-size:40px;
-  font-weight:400;
+  font-weight:var(--font-weight-normal);
   color:#fff;
   z-index:2;
 }
@@ -1432,13 +1431,13 @@ html, body {
 .apropos-section p{
   font-size:14px;
   line-height:1.7;
-  font-weight:400;
+  font-weight:var(--font-weight-normal);
   margin-bottom:12px;
 }
 .apropos-section__title{
   font-family:"Oi", cursive;
   font-size:22px;
-  font-weight:400;
+  font-weight:var(--font-weight-normal);
   margin-bottom:12px;
 }
 
@@ -1503,7 +1502,7 @@ html, body {
   font-size:12px;
   color:#6B6785;
   margin-top:6px;
-  font-weight:400;
+  font-weight:var(--font-weight-normal);
 }
 
 /* BOUTON */
@@ -1514,7 +1513,7 @@ html, body {
   background:#2F2A44;
   color:#fff;
   text-decoration:none;
-  font-weight:700;
+  font-weight:var(--font-weight-bold);
   border-radius:30px;
 }
 
@@ -1531,7 +1530,7 @@ html, body {
 }
 .apropos-footer__links a{
   color:#fff;
-  font-weight:700;
+  font-weight:var(--font-weight-bold);
   text-decoration:none;
 }
 .apropos-footer__socials{
@@ -1544,3 +1543,156 @@ html, body {
   font-size:12px;
   line-height:1.6;
 }
+
+/* ==============================
+   PAGE – STÉRÉOTYPES & MÉDIAS
+   Scope: stereotype_
+   ============================== */
+
+.stereo-page, /* optionnel si tu mets une class sur body */
+.stereotype_main {
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+}
+
+/* MAIN */
+.stereotype_main{
+  max-width: var(--max-width-sm);
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-4xl) var(--spacing-12xl);
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.stereotype_breadcrumb{
+  margin: 0 0 var(--spacing-3xl);
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  color: rgba(47, 42, 68, 0.55);
+}
+.stereotype_breadcrumb__star{
+  color: var(--color-accent);
+  margin-right: 6px;
+}
+.stereotype_breadcrumb__slash{
+  margin: 0 8px;
+  opacity: 0.8;
+}
+
+/* Intro */
+.stereotype_intro{
+  margin-bottom: var(--spacing-10xl);
+}
+
+.stereotype_title{
+  margin: 0 0 var(--spacing-3xl);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-6xl);
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  text-shadow: var(--shadow-text);
+  font-weight: 400;
+}
+
+.stereotype_lead{
+  margin: 0 0 var(--spacing-6xl);
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-loose);
+  color: var(--color-text-secondary);
+}
+
+.stereotype_book{
+  position: relative;
+  overflow: hidden;
+  margin: var(--spacing-4xl) 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.stereotype_book__img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+/* Blocks */
+.stereotype_block{
+  margin: 0 0 var(--spacing-12xl);
+}
+
+.stereotype_block__title{
+  margin: 0 0 var(--spacing-3xl);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.stereotype_text{
+  margin: 0 0 var(--spacing-4xl);
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-extra-loose);
+  color: var(--color-text-secondary);
+}
+
+/* Divider (ligne fine comme ta capture) */
+.stereotype_divider{
+  height: 1px;
+  width: 100%;
+  background: rgba(47, 42, 68, 0.35);
+  margin-top: var(--spacing-5xl);
+}
+
+/* List */
+.stereotype_list{
+  margin: 0 0 var(--spacing-4xl);
+  padding-left: 18px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-extra-loose);
+}
+.stereotype_list li{
+  margin-bottom: 8px;
+}
+
+/* Media blocks (images) */
+.stereotype_media{
+  margin: var(--spacing-5xl) 0 var(--spacing-4xl);
+}
+
+.stereotype_media img{
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+}
+
+.stereotype_media figcaption{
+  margin-top: 8px;
+  font-size: var(--font-size-xs);
+  color: rgba(47, 42, 68, 0.65);
+  font-family: var(--font-body);
+}
+
+/* Responsive */
+@media (max-width: 430px){
+  .stereotype_main{
+    padding: var(--spacing-3xl) var(--spacing-3xl) var(--spacing-12xl);
+  }
+
+  .stereotype_title{
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+}
+
