@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matilda Effect - THE INVISIBLE GRID</title>
+
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script src="/src/js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Oi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/icones/LOGO.svg" alt="Logo">
+    </a>
+
+    <div class="header-right">
+      <a href="/fr/" class="lang-link">FR</a>
+
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <img src="/assets/icones/menu.svg" alt="Menu icon">
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/en/about.html">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/matilda_effect.html">Matilda Effect</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/diane_holl_en.html">Diane Holl</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/f1_academy_en.html">F1 Academy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/stereotypes_en.html">Stereotypes & Media</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/theory.html">A Theory</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/movies_series.html">Movies / Series</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/contact.html">Contact Us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/glossary.html">Glossary</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/other_projects.html">Other Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="effet_matilda-hero" style="--hero-img: url('/assets/img/effetmatilda_back.webp');">
+    <a class="effet_matilda-hero__back" href="/en/">
+      <img src="/assets/icones/arrow_left_white.svg" alt="Back">
+    </a>
+
+    <div class="effet_matilda-hero__overlay"></div>
+
+    <div class="effet_matilda-hero__content">
+      <h1 class="effet_matilda-hero__title">
+        THE MATILDA EFFECT
+      </h1>
+    </div>
+
+    <div class="effet_matilda-hero__bottom-cap">
+      <div class="effet_matilda-hero__bottom-cap-inner"></div>
+    </div>
+  </section>
+
+  <section class="effet_matilda-intro" aria-labelledby="matilda-intro-title">
+    <div class="effet_matilda-intro__inner">
+      <!-- Label + star -->
+      <div class="effet_matilda-intro__labelrow">
+        <span class="effet_matilda-intro__star" aria-hidden="true">
+          <!-- small inline star to avoid asset dependency -->
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#c9a7e4" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l2.6 6.9 7.4.6-5.6 4.4 1.8 7.1L12 17.8 5.8 21l1.8-7.1L2 9.5l7.4-.6L12 2z"/>
+          </svg>
+        </span>
+        <span class="effet_matilda-intro__label">MATILDA EFFECT</span>
+      </div>
+
+      <div class="effet_matilda-intro__rule" role="presentation"></div>
+
+      <!-- Title -->
+      <h2 class="effet_matilda-intro__title" id="matilda-intro-title">
+        what is the<br/>Matilda&nbsp;Effect?
+      </h2>
+
+      <!-- Text -->
+      <div class="effet_matilda-intro__content">
+        <p>
+          The <strong>Matilda Effect</strong> describes a very real phenomenon: discoveries
+          made by women are often attributed to their male colleagues.
+          The term comes from Matilda Joslyn Gage, a 19th-century American feminist,
+          who already denounced this invisibilization.
+        </p>
+
+        <p>
+          From Rosalind Franklin, overshadowed in the discovery of DNA, to
+          <strong>Jocelyn Bell Burnell</strong>, denied the Nobel for discovering pulsars,
+          many scientists have seen their work minimized or erased.
+        </p>
+
+        <p>
+          This effect is not just historical — it persists today in laboratories,
+          media, and textbooks. The man's name is cited, the woman's is forgotten.
+          Recognizing the <strong>Matilda Effect</strong> means restoring the truth and giving justice to women
+          who shaped science, often in the shadows.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="effet_matilda-intro__rule" role="presentation"></div>
+
+  <section class="effet_matilda-carousel" aria-labelledby="matilda-carousel-heading">
+    <div class="effet_matilda-carousel__inner">
+      <!-- Section title -->
+      <h2 class="effet_matilda-carousel__heading" id="matilda-carousel-heading">
+        Women eclipsed<br/>by history
+      </h2>
+
+      <!-- Carousel track -->
+      <div class="effet_matilda-carousel__viewport" role="region" aria-roledescription="carousel" aria-label="Women scientists">
+        <div class="effet_matilda-carousel__track">
+          <!-- Slide 1 -->
+          <article class="effet_matilda-card" aria-roledescription="slide">
+            <h3 class="effet_matilda-card__title">Rosalind Franklin<br/>and DNA</h3>
+            <div class="effet_matilda-card__rule"></div>
+
+            <figure class="effet_matilda-card__figure">
+              <img
+                class="effet_matilda-card__img"
+                src="/assets/img/carrousel_1_effet.webp"
+                alt="Portrait of Rosalind Franklin"
+              />
+            </figure>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="effet_matilda-card" aria-roledescription="slide">
+            <h3 class="effet_matilda-card__title">Jocelyn Bell<br/>Burnell</h3>
+            <div class="effet_matilda-card__rule"></div>
+
+            <figure class="effet_matilda-card__figure">
+              <img
+                class="effet_matilda-card__img"
+                src="/assets/img/carrousel_2_effet.webp"
+                alt="Portrait of Jocelyn Bell Burnell"
+              />
+            </figure>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="effet_matilda-card" aria-roledescription="slide">
+            <h3 class="effet_matilda-card__title">Lise Meitner<br/>and fission</h3>
+            <div class="effet_matilda-card__rule"></div>
+
+            <figure class="effet_matilda-card__figure">
+              <img
+                class="effet_matilda-card__img"
+                src="/assets/img/carrousel_3_effet.webp"
+                alt="Portrait of Lise Meitner"
+              />
+            </figure>
+          </article>
+
+          <!-- Slide 4 -->
+          <article class="effet_matilda-card" aria-roledescription="slide">
+            <h3 class="effet_matilda-card__title">Chien-Shiung Wu</h3>
+            <div class="effet_matilda-card__rule"></div>
+
+            <figure class="effet_matilda-card__figure">
+              <img
+                class="effet_matilda-card__img"
+                src="/assets/img/carrousel_3_effet.webp"
+                alt="Portrait of Chien-Shiung Wu"
+              />
+            </figure>
+          </article>
+        </div>
+
+        <!-- Arrows -->
+        <button class="effet_matilda-carousel__arrow effet_matilda-carousel__arrow--prev" aria-label="Previous">
+          <img src="/assets/icones/arrow_left.svg" alt="" aria-hidden="true">
+        </button>
+        <button class="effet_matilda-carousel__arrow effet_matilda-carousel__arrow--next" aria-label="Next">
+          <img src="/assets/icones/arrow_right.svg" alt="" aria-hidden="true">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="effet_matilda-timeline" aria-labelledby="matilda-tl-title">
+    <div class="effet_matilda-tl__header">
+      <div class="effet_matilda-tl__label">
+        <h2 class="effet_matilda-tl__title" id="matilda-tl-title">
+          Key dates
+        </h2>
+      </div>
+    </div>
+    
+    <div class="effet_matilda-tl__body">
+      <ol class="effet_matilda-tl">
+        <!-- 1826 – Matilda Joslyn Gage -->
+        <li class="effet_matilda-tl__item">
+          <div class="effet_matilda-tl__left">
+            <div class="effet_matilda-tl__year">1826</div>
+            <div class="effet_matilda-tl__tick"></div>
+          </div>
+
+          <div class="effet_matilda-tl__card">
+            <div class="effet_matilda-tl__arrow">
+              <svg viewBox="0 0 48 24" fill="none" aria-hidden="true">
+                <path d="M2 12h36m0 0l-6-6m6 6l-6 6" stroke="#EBE2F3" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="effet_matilda-tl__row">
+              <div class="effet_matilda-tl__text">
+                <h3 class="effet_matilda-tl__name">Matilda Joslyn Gage <span>(1826–1898)</span></h3>
+                <p class="effet_matilda-tl__role"><strong>Role:</strong> American feminist activist and writer.</p>
+                <p class="effet_matilda-tl__fact"><strong>Key fact:</strong> She originated the concept; at the end of the 19th century, she denounced the erasure of women from history, particularly in science.</p>
+              </div>
+              <img class="effet_matilda-tl__photo" src="/assets/img/timeline1.webp" alt="Matilda Joslyn Gage">
+            </div>
+          </div>
+        </li>
+
+        <!-- 1878 – Lise Meitner -->
+        <li class="effet_matilda-tl__item">
+          <div class="effet_matilda-tl__left">
+            <div class="effet_matilda-tl__year">1878</div>
+            <div class="effet_matilda-tl__tick"></div>
+          </div>
+
+          <div class="effet_matilda-tl__card">
+            <div class="effet_matilda-tl__arrow">
+              <svg viewBox="0 0 48 24" fill="none" aria-hidden="true">
+                <path d="M2 12h36m0 0l-6-6m6 6l-6 6" stroke="#EBE2F3" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="effet_matilda-tl__row">
+              <div class="effet_matilda-tl__text">
+                <h3 class="effet_matilda-tl__name">Lise Meitner <span>(1878–1968)</span></h3>
+                <p class="effet_matilda-tl__role"><strong>Role:</strong> Austrian physicist, pioneer of nuclear physics.</p>
+                <p class="effet_matilda-tl__fact"><strong>Key fact:</strong> Co-discovered nuclear fission with Otto Hahn, but never received the Nobel for this discovery.</p>
+              </div>
+              <img class="effet_matilda-tl__photo" src="/assets/img/timeline2.webp" alt="Lise Meitner">
+            </div>
+          </div>
+        </li>
+
+        <!-- 1912 – Chien-Shiung Wu -->
+        <li class="effet_matilda-tl__item">
+          <div class="effet_matilda-tl__left">
+            <div class="effet_matilda-tl__year">1912</div>
+            <div class="effet_matilda-tl__tick"></div>
+          </div>
+
+          <div class="effet_matilda-tl__card">
+            <div class="effet_matilda-tl__arrow">
+              <svg

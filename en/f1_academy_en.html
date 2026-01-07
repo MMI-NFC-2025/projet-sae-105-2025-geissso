@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Academy - THE INVISIBLE GRID</title>
+
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script src="/src/js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Oi&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/icones/LOGO.svg" alt="Logo">
+    </a>
+
+    <div class="header-right">
+      <a href="/fr/" class="lang-link">FR</a>
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <img src="/assets/icones/menu.svg" alt="Menu icon">
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/en/about.html">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/matilda_effect.html">Matilda Effect</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/diane_holl_en.html">Diane Holl</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/f1_academy_en.html">F1 Academy</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/stereotypes_en.html">Stereotypes & Media</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/theory.html">A Theory</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/movies_series.html">Movies / Series</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/contact.html">Contact Us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/glossary.html">Glossary</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/en/other_projects.html">Other Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="f1-hero" style="--hero-img: url('/assets/img/f1academy_back.webp');">
+    <a class="f1-hero__back" href="/en/">
+      <img src="/assets/icones/arrow_left_white.svg" alt="Back">
+    </a>
+
+    <div class="f1-hero__overlay"></div>
+
+    <div class="f1-hero__content">
+      <h1 class="f1-hero__title">F1 ACADEMY</h1>
+    </div>
+
+    <div class="f1-hero__bottom-cap">
+      <div class="f1-hero__bottom-cap-inner"></div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="f1a-main">
+    <!-- Breadcrumb -->
+    <p class="f1a-breadcrumb">
+      <span class="f1a-breadcrumb__star">★</span>
+      Matilda Effect / Women in motorsport
+      <span class="f1a-breadcrumb__slash">/</span>
+      The media
+    </p>
+
+    <!-- Logo / title -->
+    <section class="f1a-brand" aria-label="F1 Academy presentation">
+      <img class="f1a-brand__logo f1a-brand__logo--centered" src="/assets/img/f1_academy_1.webp" alt="F1 Academy logo"/>
+      <p class="f1a-brand__desc">
+        Created to give young female drivers a real place in motorsport,
+        F1 Academy is more than a championship: it's a quiet revolution.
+      </p>
+    </section>
+
+    <!-- Section: what is it -->
+    <section class="f1a-section" aria-labelledby="f1a-what">
+      <h2 class="f1a-section__title" id="f1a-what">What is F1 Academy?</h2>
+
+      <div class="f1a-video">
+        <!-- ✅ Replace src with your MP4 file -->
+        <video class="f1a-video__player" controls playsinline preload="metadata">
+          <source src="/assets/video/f1academy_trailer.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <p class="f1a-text">
+        Launched in 2023 by <strong>Suzie Wolff</strong>, the FIA and Formula One Management,
+        F1 Academy is a 100% female single-seater series of F4 type.
+        It welcomes drivers aged 16 to 25 from around the world, offering them
+        a professional, supported, funded, and above all visible championship.
+      </p>
+
+      <p class="f1a-text">
+        Each season, five teams (Prema, ART, MP Motorsport, Campos, Rodin) field three cars
+        each, all identical:
+      </p>
+
+      <ul class="f1a-list">
+        <li>Engine: Autotune T421</li>
+        <li>Lightweight and secure chassis</li>
+        <li>Pirelli tires</li>
+        <li>Performance close to international F4</li>
+      </ul>
+
+      <p class="f1a-text">
+        The goal is not raw speed, but comprehensive training: driving, communication,
+        pressure management, and media experience.
+      </p>
+    </section>
+
+    <!-- Top 3 -->
+    <section class="f1a-section" aria-labelledby="f1a-top3">
+      <h2 class="f1a-section__title" id="f1a-top3">Top 3 championship 2024</h2>
+
+      <div class="f1a-top3">
+        <!-- ✅ Replace the 3 src with YOUR images in /assets/img/ -->
+        <img class="f1a-top3__img" src="/assets/img/top1.webp" alt="Top 1 championship 2024" />
+        <img class="f1a-top3__img" src="/assets/img/top2.webp" alt="Top 2 championship 2024" />
+        <img class="f1a-top3__img" src="/assets/img/top3.webp" alt="Top 3 championship 2024" />
+      </div>
+
+      <p class="f1a-text">
+        For decades, women have been excluded from professional circuits for lack of talent, but due to lack of adapted structures and financial support.
+      </p>
+
+      <p class="f1a-text">
+        F1 Academy breaks this cycle:
+      </p>
+
+      <ul class="f1a-list">
+        <li>It guarantees accessible budgets</li>
+        <li>Provides access to top-level engineers</li>
+        <li>Offers unprecedented media exposure</li>
+        <li>Creates direct partnership with Formula 1</li>
+      </ul>
+
+      <p class="f1a-text">
+        In 2024, the series gets closer to F1: each Formula 1 team now supports its
+        own F1 Academy driver, with single-seaters in the official team colors.
+      </p>
+
+      <p class="f1a-text">
+        Result: women are now an integral part of the paddock.
+      </p>
+    </section>
+
+    <!-- Partners (optional, like your screenshot) -->
+    <section class="f1a-partners" aria-label="Partners">
+      <h3 class="f1a-partners__title">Their partners</h3>
+      <div class="f1a-partners__row">
+        <img src="/assets/img/f1_academy_2.webp" alt="Partners" />
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/en/about.html">About</a>
+        <a href="/en/terms.html">Terms and Conditions</a>
+        <a href="/en/privacy.html">Privacy Policy</a>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="#" aria-label="Facebook"><img src="/assets/icones/Facebook-Icon.svg" alt="Facebook icon"></a>
+        <a href="#" aria-label="Twitter"><img src="/assets/icones/Twitter-Icon.svg" alt="Twitter icon"></a>
+        <a href="#" aria-label="YouTube"><img src="/assets/icones/Youtube-Icon.svg" alt="YouTube icon"></a>
+        <a href="#" aria-label="LinkedIn"><img src="/assets/icones/LinkedIn.svg" alt="LinkedIn icon"></a>
+      </div>
+
+      <div class="footer__separator"></div>
+
+      <div class="footer__legal">
+        <p>@ 2025 Lorems</p>
+        <p>All rights reserved</p>
+        <p>GEISS Solène C1</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
