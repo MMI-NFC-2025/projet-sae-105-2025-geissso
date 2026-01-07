@@ -1,0 +1,215 @@
+/* ===== VARIABLES CSS ===== */
+
+:root {
+  /* === COULEURS === */
+  
+  /* Couleurs principales */
+  --color-primary: #2F2A44;           /* Violet foncé principal */
+  --color-primary-hover: #3d3554;     /* Violet foncé hover */
+  --color-secondary: #c9a7e4;         /* Violet clair/mauve */
+  --color-secondary-medium: #b896d1;  /* Violet moyen gradient */
+  --color-secondary-dark: #9b7bb5;    /* Violet foncé gradient */
+  --color-secondary-light: #d7b6f1;   /* Violet clair hover */
+  --color-accent: #D6B5F3;            /* Violet accent */
+  
+  /* Couleurs de fond */
+  --color-bg-light: #EBE2F3;          /* Fond violet très clair */
+  --color-bg-lightest: #f0e7fb;       /* Fond violet ultra clair */
+  --color-bg-white: #ffffff;          /* Fond blanc */
+  --color-bg-off-white: #f8f6fd;      /* Blanc cassé */
+  
+  /* Couleurs de texte */
+  --color-text-primary: #2F2A44;      /* Texte principal */
+  --color-text-secondary: #4B4760;    /* Texte secondaire */
+  --color-text-light: #EBE2F3;        /* Texte clair */
+  --color-text-lightest: #F7F3FC;     /* Texte ultra clair */
+  --color-text-white: #ffffff;        /* Texte blanc */
+  --color-text-dark: #111111;         /* Texte très foncé */
+  
+  /* Couleurs spéciales */
+  --color-error: #8a2a2a;             /* Couleur d'erreur */
+  
+  /* Couleurs avec opacité */
+  --color-overlay-light: rgba(47, 42, 68, 0.1);
+  --color-overlay-medium: rgba(47, 42, 68, 0.3);
+  --color-overlay-dark: rgba(47, 42, 68, 0.6);
+  --color-overlay-darker: rgba(47, 42, 68, 0.85);
+  --color-shadow-light: rgba(47, 42, 68, 0.12);
+  --color-shadow-medium: rgba(47, 42, 68, 0.2);
+  --color-shadow-dark: rgba(47, 42, 68, 0.25);
+  --color-shadow-darker: rgba(47, 42, 68, 0.3);
+  --color-border-light: rgba(240, 231, 251, 0.7);
+  --color-text-fade: rgba(75, 71, 96, 0.28);
+  
+  /* === TYPOGRAPHIE === */
+  
+  /* Familles de police */
+  --font-heading: "Oi", cursive;
+  --font-body: "Montserrat", sans-serif;
+  
+  /* Tailles de police */
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 15px;
+  --font-size-xl: 16px;
+  --font-size-2xl: 18px;
+  --font-size-3xl: 20px;
+  --font-size-4xl: 22px;
+  --font-size-5xl: 24px;
+  --font-size-6xl: 26px;
+  --font-size-7xl: 28px;
+  --font-size-8xl: 32px;
+  --font-size-9xl: 36px;
+  --font-size-10xl: 40px;
+  --font-size-11xl: 44px;
+  
+  /* Poids de police */
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Hauteur de ligne */
+  --line-height-tight: 1;
+  --line-height-snug: 1.04;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.7;
+  --line-height-extra-loose: 1.8;
+  
+  /* Espacement des lettres */
+  --letter-spacing-tight: 0.2px;
+  --letter-spacing-normal: 0.5px;
+  --letter-spacing-wide: 0.6px;
+  --letter-spacing-wider: 0.8px;
+  --letter-spacing-widest: 1px;
+  --letter-spacing-extra-wide: 2px;
+  --letter-spacing-super-wide: 3px;
+  
+  /* === ESPACEMENTS === */
+  
+  /* Marges et paddings */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 18px;
+  --spacing-2xl: 20px;
+  --spacing-3xl: 24px;
+  --spacing-4xl: 26px;
+  --spacing-5xl: 28px;
+  --spacing-6xl: 30px;
+  --spacing-7xl: 32px;
+  --spacing-8xl: 36px;
+  --spacing-9xl: 40px;
+  --spacing-10xl: 48px;
+  --spacing-11xl: 50px;
+  --spacing-12xl: 56px;
+  --spacing-13xl: 60px;
+  --spacing-14xl: 70px;
+  --spacing-15xl: 80px;
+  --spacing-16xl: 100px;
+  --spacing-17xl: 110px;
+  --spacing-18xl: 120px;
+  
+  /* Gaps */
+  --gap-xs: 6px;
+  --gap-sm: 10px;
+  --gap-md: 15px;
+  --gap-lg: 18px;
+  --gap-xl: 20px;
+  --gap-2xl: 24px;
+  --gap-3xl: 25px;
+  --gap-4xl: 26px;
+  --gap-5xl: 30px;
+  --gap-6xl: 40px;
+  --gap-7xl: 60px;
+  
+  /* === BORDURES === */
+  
+  /* Rayons de bordure */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 18px;
+  --radius-xl: 20px;
+  --radius-2xl: 22px;
+  --radius-3xl: 24px;
+  --radius-4xl: 26px;
+  --radius-5xl: 28px;
+  --radius-6xl: 30px;
+  --radius-7xl: 48px;
+  --radius-8xl: 75px;
+  --radius-9xl: 80px;
+  --radius-10xl: 82px;
+  --radius-11xl: 90px;
+  --radius-full: 9999px;
+  --radius-round: 50%;
+  
+  /* Épaisseurs de bordure */
+  --border-thin: 1px;
+  --border-normal: 2px;
+  --border-medium: 3px;
+  --border-thick: 4px;
+  --border-thicker: 5px;
+  --border-extra-thick: 6px;
+  
+  /* === OMBRES === */
+  
+  --shadow-xs: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 4px 8px rgba(47, 42, 68, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 6px 16px rgba(47, 42, 68, 0.22);
+  --shadow-xl: 0 6px 24px rgba(47, 42, 68, 0.12);
+  --shadow-2xl: 0 8px 24px rgba(47, 42, 68, 0.15);
+  --shadow-3xl: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-4xl: 0 10px 20px rgba(0, 0, 0, 0.25);
+  --shadow-5xl: 0 10px 30px rgba(47, 42, 68, 0.22);
+  --shadow-6xl: 0 10px 30px rgba(47, 42, 68, 0.3);
+  --shadow-7xl: 0 10px 32px rgba(47, 42, 68, 0.2);
+  --shadow-8xl: 0 16px 35px rgba(0, 0, 0, 0.35);
+  --shadow-text: 0 4px 22px rgba(0, 0, 0, 0.35);
+  
+  /* === TRANSITIONS === */
+  
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.25s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.35s ease;
+  --transition-slower: 0.4s ease;
+  --transition-slowest: 0.5s ease;
+  
+  /* === TAILLES === */
+  
+  /* Largeurs maximales */
+  --max-width-xs: 420px;
+  --max-width-sm: 460px;
+  --max-width-md: 470px;
+  --max-width-lg: 560px;
+  --max-width-xl: 680px;
+  --max-width-2xl: 760px;
+  --max-width-3xl: 800px;
+  --max-width-4xl: 900px;
+  --max-width-5xl: 1000px;
+  --max-width-6xl: 1200px;
+  
+  /* Hauteurs minimales */
+  --min-height-hero: 810px;
+  
+  /* Tailles d'icônes */
+  --icon-xs: 18px;
+  --icon-sm: 22px;
+  --icon-md: 26px;
+  --icon-lg: 28px;
+  --icon-xl: 34px;
+  --icon-2xl: 50px;
+  
+  /* === Z-INDEX === */
+  
+  --z-base: 0;
+  --z-dropdown: 1;
+  --z-sticky: 2;
+  --z-fixed: 3;
+  --z-modal: 10;
+}

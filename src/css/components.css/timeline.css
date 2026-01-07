@@ -4,7 +4,7 @@
 .effet_matilda-timeline { 
   margin-top: 50px;
   width: 100%;
-  background-color: #2F2A44;
+  background-color: var(--color-primary);
   padding-bottom: 60px;
   border-radius: 0px 50px 0px 0px;
 }
@@ -19,9 +19,9 @@
 
 .effet_matilda-tl__title{
   margin: 0; 
-  font-family: "Oi", cursive; 
+  font-family: var(--font-heading); 
   font-size: 26px; 
-  color: #EBE2F3;
+  color: var(--color-text-light);
   text-transform: uppercase; 
   letter-spacing: 2px;
   font-weight: 400;
@@ -50,7 +50,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: #EBE2F3;
+  background: var(--color-text-light);
   z-index: 0;
 }
 
@@ -78,10 +78,10 @@
 }
 
 .effet_matilda-tl__year {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-body);
   font-size: 18px;
   font-weight: 700;
-  color: #EBE2F3;
+  color: var(--color-text-light);
   margin-bottom: 8px;
   text-align: center;
 }
@@ -91,7 +91,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #EBE2F3;
+  background: var(--color-text-light);
   position: relative;
   z-index: 2;
   margin-top: 4px;
@@ -133,10 +133,10 @@
 }
 
 .effet_matilda-tl__name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-body);
   font-size: 20px;
   font-weight: 700;
-  color: #EBE2F3;
+  color: var(--color-text-light);
   margin-bottom: 12px;
   line-height: 1.3;
 }
@@ -144,21 +144,21 @@
 .effet_matilda-tl__name span {
   font-weight: 400;
   font-size: 18px;
-  color: #c9a7e4;
+  color: var(--color-secondary);
 }
 
 .effet_matilda-tl__role,
 .effet_matilda-tl__fact {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   line-height: 1.6;
-  color: #EBE2F3;
+  color: var(--color-text-light);
   margin-bottom: 10px;
 }
 
 .effet_matilda-tl__role strong,
 .effet_matilda-tl__fact strong {
-  color: #c9a7e4;
+  color: var(--color-secondary);
   font-weight: 700;
 }
 
@@ -169,7 +169,7 @@
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 6px solid #c9a7e4;
+  border: 6px solid var(--color-secondary);
   align-self: flex-start;
 }
 

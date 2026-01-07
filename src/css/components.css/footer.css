@@ -1,10 +1,10 @@
 /* ===== FOOTER ===== */
 
 .footer {
-  background: #c9a7e4;
+  background: var(--color-secondary);
   padding: 50px 26px 60px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
+  font-family: var(--font-body);
+  color: var(--color-bg-white);
 }
 
 .footer__inner {
@@ -21,7 +21,7 @@
 }
 
 .footer__links a {
-  color: #ffffff;
+  color: var(--color-bg-white);
   font-size: 16px;
   text-decoration: none;
   font-weight: 700;

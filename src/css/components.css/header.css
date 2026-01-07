@@ -1,7 +1,7 @@
 
 
 header {
-    background: linear-gradient(135deg, #b896d1 0%, #9b7bb5 100%);
+    background: linear-gradient(135deg, var(--color-secondary-medium) 0%, var(--color-secondary-dark) 100%);
     padding: 20px 24px;
     display: flex;
     justify-content: space-between;
@@ -151,10 +151,10 @@ header {
 }
 
 .hero-banner h1 {
-    font-family: 'Oi', cursive;
+    font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 400;
-    color: #2F2A44;
+    color: var(--color-primary);
     margin: 0;
     line-height: 1.2;
 }

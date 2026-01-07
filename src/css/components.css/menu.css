@@ -1,5 +1,5 @@
 :root{
-  --brand:#2F2A44; /* couleur de la typo & de la croix */
+  --brand:var(--color-primary); /* couleur de la typo & de la croix */
 }
 
 /* ====== MENU PLEIN ÉCRAN ====== */
@@ -9,7 +9,7 @@
   height: 100vh;
 
   background: url("/assets/img/menu_back.svg") center/cover no-repeat;
-  background-color: #ffffff; /* fallback au cas où le SVG est semi-transparent */
+  background-color: var(--color-bg-white); /* fallback au cas où le SVG est semi-transparent */
 
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@
 }
 
 .menu__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;

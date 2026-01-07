@@ -15,30 +15,30 @@ html, body {
 
 /* ===== STYLES ===== */
 .matilda-card__paragraph {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     align-items: center;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #2F2A44;
-    margin: 25px 20px 20px 25px;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+    margin: var(--spacing-3xl) var(--spacing-2xl) var(--spacing-2xl) var(--spacing-3xl);
     text-align: left;
 }
 
 .matilda-card__button {
     display: inline-block;
     text-align: center;
-    background-color: #2F2A44;
-    color: #EBE2F3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 14px 32px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    letter-spacing: 0.5px;
-    margin-top: 15px;
+    padding: var(--font-size-md) var(--spacing-7xl);
+    border-radius: var(--radius-6xl);
+    transition: all var(--transition-medium);
+    letter-spacing: var(--letter-spacing-normal);
+    margin-top: var(--spacing-md);
 }
 
 .matilda-card__inner {
@@ -48,9 +48,9 @@ html, body {
 }
 
 .btn-primary:hover {
-    background-color: #3d3554;
+    background-color: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(47, 42, 68, 0.3);
+    box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:active {
@@ -130,24 +130,24 @@ html, body {
     bottom: -2px;
     width: 245px;
     height: 61px;
-    background-color: #c9a7e4;
+    background-color: var(--color-secondary);
     border-radius: 0 90px 0 0;
     display: flex;
     padding-left: 5px;
     padding-top: 15px;
     box-sizing: border-box;
-    font-family: "Oi", cursive;
+    font-family: var(--font-heading);
     font-size: 24px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-bg-white);
 }
 
 /* Corps violet */
 
 .stats-combien__body {
     position: relative;
-    background-color: #c9a7e4;
+    background-color: var(--color-secondary);
     box-sizing: border-box;
     padding: 80px 55px 100px;
     display: flex;
@@ -166,8 +166,8 @@ html, body {
 .stats-combien__stat {
     text-align: center;
     flex: 0 0 45%;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
+    font-family: var(--font-body);
+    color: var(--color-bg-white);
 }
 
 .stats-combien__value {
@@ -208,9 +208,9 @@ html, body {
     justify-content: center;
     margin: -22px 10px 0;
     padding: 12px 40px 18px;
-    background-color: #c9a7e4;
+    background-color: var(--color-secondary);
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-body);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -229,8 +229,8 @@ html, body {
     width: 10px;
     height: 10px;
     margin-top: 6px;
-    border-right: 2px solid #111111;
-    border-bottom: 2px solid #111111;
+    border-right: 2px solid var(--color-text-dark);
+    border-bottom: 2px solid var(--color-text-dark);
     transform: rotate(45deg);
     pointer-events: none;
 }
@@ -238,7 +238,7 @@ html, body {
 /* petit hover discret */
 
 .stats-combien__button:hover {
-    background-color: #d7b6f1;
+    background-color: var(--color-secondary-light);
 }
 
 /* ===== SECTION QUI SONT-ELLES ? ===== */
@@ -266,17 +266,17 @@ html, body {
     bottom: -2px;
     width: 390px;
     height: 61px;
-    background-color: #ffffff;
+    background-color: var(--color-bg-white);
     border-radius: 0 90px 0 0;
     display: flex;
     padding-left: 5px;
     padding-top: 15px;
     box-sizing: border-box;
-    font-family: "Oi", cursive;
+    font-family: var(--font-heading);
     font-size: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #2F2A44;
+    color: var(--color-primary);
 }
 .drivers {
   width: 100%;
@@ -294,12 +294,13 @@ html, body {
 }
 
 .drivers__title {
-  font-family: "Oi", cursive;
+  font-family: var(--font-heading);
   font-size: 26px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: #2F2A44;
+  color: var(--color-primary);
   text-align: left;
+  font-weight: 400;
 }
 
 .drivers__header::after {
@@ -309,8 +310,8 @@ html, body {
   top: 55%;
   width: 120px;
   height: 40px;
-  border-top: 4px solid #D6B5F3;
-  border-right: 4px solid #D6B5F3;
+  border-top: 4px solid var(--color-accent);
+  border-right: 4px solid var(--color-accent);
   border-radius: 0 40px 0 0;
 }
 
@@ -393,12 +394,12 @@ html, body {
   transform: translateX(-50%);
   margin: 0;
   padding: 8px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-bg-white);
 }
 
 /* ===== TEXTE ASSOCIÉ ===== */
@@ -409,10 +410,10 @@ html, body {
 
 .driver-detail {
   display: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   line-height: 1.7;
-  color: #4B4760;
+  color: var(--color-text-secondary);
   text-align: left;
 }
 
@@ -433,8 +434,8 @@ html, body {
   display: inline-block;
   width: 18px;
   height: 18px;
-  border-left: 2px solid #2F2A44;
-  border-bottom: 2px solid #2F2A44;
+  border-left: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
   transform: rotate(-45deg);
 }
 
@@ -456,11 +457,11 @@ html, body {
 
 .who__description {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-body);
     font-size: 14px;
     line-height: 1.8;
-    color: #4B4760;
-    background: linear-gradient(180deg, #4B4760 0%, #4B4760 60%, rgba(75, 71, 96, 0.28) 100%);
+    color: var(--color-text-secondary);
+    background: linear-gradient(180deg, var(--color-text-secondary) 0%, var(--color-text-secondary) 60%, rgba(75, 71, 96, 0.28) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -505,23 +506,23 @@ html, body {
     bottom: -5px;
     width: 270px;
     height: 61px;
-    background-color: #c9a7e4;
+    background-color: var(--color-secondary);
     border-radius: 0 90px 0 0;
     display: flex;
     align-items: center;
     padding-left: 12px;
     box-sizing: border-box;
-    font-family: "Oi", cursive;
+    font-family: var(--font-heading);
     font-size: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-bg-white);
     font-weight: 400;
 }
 
 .articles__body {
     position: relative;
-    background-color: #c9a7e4;
+    background-color: var(--color-secondary);
     padding: 80px 26px 70px;
     box-sizing: border-box;
 }
@@ -532,7 +533,7 @@ html, body {
     left: 20px;
     right: 20px;
     height: 2px;
-    background-color: #f0e7fb;
+    background-color: var(--color-bg-lightest);
     opacity: 0.4;
 }
 
@@ -548,7 +549,7 @@ html, body {
 /* === Cards === */
 .article-card {
     width: 100%;
-    background: #2F2A44; /* violet foncé */
+    background: var(--color-primary); /* violet foncé */
     border-radius: 28px;
     padding: 12px;
 
@@ -567,7 +568,7 @@ html, body {
 .article-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 32px rgba(47, 42, 68, 0.2);
-    border-color: #f0e7fb;
+    border-color: var(--color-bg-lightest);
 }
 
 /* Bloc media */
@@ -650,7 +651,7 @@ html, body {
     left: 18px;
     right: 18px;
     bottom: 16px;
-    color: #fff;
+    color: var(--color-bg-white);
     text-transform: uppercase;
     display: grid;
     gap: 6px;
@@ -658,7 +659,7 @@ html, body {
 
 .article-card__title {
     margin: 0;
-    font-family: "Oi", cursive;
+    font-family: var(--font-heading);
     font-size: 24px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -666,7 +667,7 @@ html, body {
 
 .article-card__subtitle {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-body);
     font-size: 12px;
     letter-spacing: 0.8px;
     opacity: .9;
@@ -674,12 +675,12 @@ html, body {
 
 .article-card__intro {
     margin: 8px 0 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-body);
     font-size: 12px;
     line-height: 1.45;
     text-transform: none;
     letter-spacing: .2px;
-    color: #f8f6fd;
+    color: var(--color-bg-off-white);
     opacity: 0.95;
 }
 
@@ -746,7 +747,7 @@ html, body {
   margin-top: 75px;
   margin-bottom: 75px;
   padding: 36px 24px;
-  background: #ffffff;
+  background: var(--color-bg-white);
 }
 
 .newsletter__inner {
@@ -767,9 +768,9 @@ html, body {
 
 .newsletter__input {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
-  color: #2F2A44;
+  color: var(--color-primary);
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(47,42,68,.45); /* soulignement */
@@ -781,8 +782,8 @@ html, body {
 .newsletter__input::placeholder { color: rgba(47,42,68,.55); }
 
 .newsletter__input:focus {
-  border-bottom-color: #2F2A44;
-  box-shadow: 0 2px 0 0 #2F2A44;
+  border-bottom-color: var(--color-primary);
+  box-shadow: 0 2px 0 0 var(--color-primary);
 }
 
 /* Bouton pilule violet */
@@ -793,9 +794,9 @@ html, body {
   cursor: pointer;
   padding: 10px 18px;
   border-radius: 9999px;
-  background: #c9a7e4;
-  color: #2F2A44;
-  font-family: "Montserrat", sans-serif;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: .6px;
@@ -803,28 +804,28 @@ html, body {
   transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
 
-.newsletter__btn:hover { background: #d7b6f1; transform: translateY(-1px); }
+.newsletter__btn:hover { background: var(--color-secondary-light); transform: translateY(-1px); }
 .newsletter__btn:active { transform: translateY(0); }
 .newsletter__btn:disabled { opacity: 10; cursor: not-allowed; }
 
 /* Message de statut */
 .newsletter__msg {
   margin: 10px 2px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   line-height: 1.5;
-  color: #2F2A44;
+  color: var(--color-primary);
   min-height: 1.2em; /* réserve la place même sans message */
 }
 
 .newsletter__msg.is-success {
   padding: 8px 12px;
-  background: #f0e7fb;
+  background: var(--color-bg-lightest);
   border-radius: 10px;
 }
 
 .newsletter__msg.is-error {
-  color: #8a2a2a;
+  color: var(--color-error, #8a2a2a);
 }
 
 /* Responsive */
@@ -895,12 +896,12 @@ html, body {
 /* Title */
 .effet_matilda-hero__title {
   margin: 0;
-  font-family: "Oi", cursive;
+  font-family: var(--font-heading);
   font-weight: 400;
   text-transform: uppercase;
   line-height: .95;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: var(--color-bg-white);
   text-shadow: 0 4px 22px rgba(0,0,0,.35);
   font-size: clamp(36px, 8.5vw, 64px);
 }
@@ -920,8 +921,8 @@ html, body {
 .effet_matilda-hero__bottom-cap-inner {
   width: min(100%, 470px);
   height: 100px;
-  background: #FFFFFF;
-  border: 6px solid #c9a7e4;
+  background: var(--color-bg-white);
+  border: 6px solid var(--color-secondary);
   border-bottom: none;
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
@@ -946,7 +947,7 @@ html, body {
 /* ===== SECTION INTRO (Effet Matilda) ===== */
 .effet_matilda-intro {
   padding: 28px 20px 48px;
-  color: #2F2A44;
+  color: var(--color-primary);
   
 }
 
@@ -966,11 +967,11 @@ html, body {
 .effet_matilda-intro__star { line-height: 0; display: inline-flex; }
 
 .effet_matilda-intro__label {
-  font-family: "Montserrat", sans-serif, light;
+  font-family: var(--font-body), light;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #c9a7e4;            
+  color: var(--color-secondary);            
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -979,19 +980,19 @@ html, body {
 .effet_matilda-intro__rule {
   height: 1px;
   width: 80%;
-  background: #2F2A44;
+  background: var(--color-primary);
   margin: 8px 42px 18px;
 }
 
 /* Titre */
 .effet_matilda-intro__title {
   margin: 0 0 18px;
-  font-family: "Oi", cursive;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: clamp(28px, 8vw, 44px);
   line-height: 1.04;
   letter-spacing: 0.6px;
-  color: #2F2A44;
+  color: var(--color-primary);
   text-transform: none;      /* comme sur ta maquette */
 }
 
@@ -1003,10 +1004,10 @@ html, body {
 
 .effet_matilda-intro__content p {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.7;
-  color: #2F2A44;
+  color: var(--color-primary);
 }
 
 .effet_matilda-intro__content p strong {
@@ -1022,4 +1023,341 @@ html, body {
 
 /* ===== TIMELINE — EFFET MATILDA ===== */
 
+/* ===== F1 ACADEMY PAGE ===== */
+
+/* Hero Section */
+.f1-hero {
+  position: relative;
+  height: auto;
+  min-height: 810px;
+  overflow: hidden;
+  display: grid;
+  place-items: end start;
+  padding: 24px 20px 110px;
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+}
+
+.f1-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(47,42,68,0.00) 0%,
+    rgba(47,42,68,0.22) 30%,
+    rgba(47,42,68,0.70) 70%,
+    rgba(47,42,68,0.85) 100%
+  );
+  pointer-events: none;
+}
+
+.f1-hero__back {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+}
+
+.f1-hero__back img {
+  width: 22px;
+  height: 22px;
+}
+
+.f1-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.f1-hero__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: .95;
+  letter-spacing: 2px;
+  color: var(--color-bg-white);
+  text-shadow: 0 4px 22px rgba(0,0,0,.35);
+  font-size: clamp(36px, 8.5vw, 64px);
+}
+
+.f1-hero__bottom-cap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  height: 120px;
+  display: grid;
+  place-items: end center;
+  pointer-events: none;
+}
+
+.f1-hero__bottom-cap-inner {
+  width: min(100%, 470px);
+  height: 100px;
+  background: var(--color-bg-white);
+  border: 6px solid var(--color-secondary);
+  border-bottom: none;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  box-shadow: 0 -10px 30px rgba(47,42,68,.22);
+}
+
+.f1a-page {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-bg-white);
+  color: var(--color-primary);
+}
+
+/* Header simple */
+.f1a-header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: rgba(201,167,228,.85);
+  backdrop-filter: blur(6px);
+  z-index: 50;
+}
+
+.f1a-header__logo img{ height: 26px; display:block; }
+.f1a-header__right{ display:flex; align-items:center; gap:14px; }
+.f1a-header__lang{
+  font-weight: 800;
+  color: var(--color-bg-white);
+  text-decoration:none;
+  letter-spacing: 1px;
+}
+.f1a-header__menu{
+  width: 34px; height: 34px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.f1a-header__menu img{ width:100%; display:block; }
+
+/* HERO */
+.f1a-hero{
+  position: relative;
+  min-height: 78vh;
+  background: var(--hero-img) center/cover no-repeat;
+  padding-top: 64px; /* compense le header fixed */
+}
+
+.f1a-hero__back{
+  position:absolute;
+  top: 78px;
+  left: 14px;
+  z-index: 2;
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  text-decoration: none;
+}
+.f1a-hero__back img{ width:18px; height:auto; display:block; }
+
+.f1a-hero__overlay{
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(47,42,68,.1) 0%, rgba(47,42,68,.75) 75%, rgba(47,42,68,.9) 100%);
+}
+
+.f1a-hero__content{
+  position:absolute;
+  left: 18px;
+  bottom: 84px;
+  z-index: 2;
+}
+
+.f1a-hero__title{
+  margin:0;
+  font-family:var(--font-heading);
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-lightest, #F7F3FC);
+  font-size: 44px;
+  line-height: .95;
+}
+
+/* Cap arrondi blanc en bas comme ta capture */
+.f1a-hero__cap{
+  position:absolute;
+  left:0; right:0; bottom:-1px;
+  height: 70px;
+  background:var(--color-bg-white);
+  border-radius: 42px 42px 0 0;
+  z-index: 3;
+}
+
+/* MAIN */
+.f1a-main{
+  padding: 18px 18px 50px;
+  margin-top: -18px; /* colle sous le cap */
+}
+
+/* Breadcrumb */
+.f1a-breadcrumb{
+  margin: 10px 0 14px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(47,42,68,.55);
+  font-family: var(--font-body);
+}
+.f1a-breadcrumb__star{ color:var(--color-secondary); }
+.f1a-breadcrumb__slash{ margin: 0 8px; }
+
+/* Brand */
+.f1a-brand{
+  padding: 10px 2px 10px;
+}
+.f1a-brand__logo{
+  width: 260px;
+  max-width: 100%;
+  display:block;
+  margin: 8px 0 10px;
+}
+.f1a-brand__logo--centered{
+  margin-left: auto;
+  margin-right: auto;
+}
+.f1a-brand__desc{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+}
+
+/* Sections */
+.f1a-section{
+  padding: 14px 0 18px;
+}
+
+.f1a-section__title{
+  margin: 14px 0 12px;
+  font-family:var(--font-heading);
+  font-size: 22px;
+  line-height: 1.05;
+  color:var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Video */
+.f1a-video{
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--color-text-dark);
+  box-shadow: 0 10px 26px rgba(47,42,68,.12);
+  margin: 10px 0 14px;
+}
+.f1a-video__player{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text */
+.f1a-text{
+  margin: 10px 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color:var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.f1a-list{
+  margin: 10px 0 10px 18px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color:var(--color-primary);
+  font-family: var(--font-body);
+}
+
+/* Top 3 */
+.f1a-top3{
+  display: grid;
+  gap: 12px;
+  margin: 12px 0 16px;
+}
+.f1a-top3__img{
+  width:100%;
+  border-radius: 14px;
+  display:block;
+}
+
+/* Partners */
+
+.f1a-partners__row{
+  display:flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items:center;
+}
+.f1a-partners__row img{
+  height: 120px;
+  width: auto;
+  display:block;
+  opacity: .9;
+}
+.f1a-partners__title {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+}
+/* Footer */
+.f1a-footer{
+  background: var(--color-secondary);
+  padding: 26px 18px 20px;
+  color: var(--color-bg-white);
+  font-family: var(--font-body);
+}
+.f1a-footer__links{
+  display:flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.f1a-footer__links a{
+  color:var(--color-bg-white);
+  text-decoration:none;
+  font-weight:700;
+  font-size: 16px;
+  font-family: var(--font-body);
+}
+
+.f1a-footer__socials{
+  display:flex;
+  gap: 26px;
+  margin: 22px 0 18px;
+  align-items:center;
+}
+.f1a-footer__socials img{ height: 28px; width: auto; display:block; }
+
+.f1a-footer__sep{
+  height: 2px;
+  background: rgba(255,255,255,.35);
+  margin: 12px 0 16px;
+}
+
+.f1a-footer__legal p{
+  margin: 6px 0;
+  font-size: 12px;
+  opacity: .95;
+  font-family: var(--font-body);
+}
 
