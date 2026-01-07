@@ -59,6 +59,7 @@
       </nav>
     </div>
   </header>
+<main>
 
   <!-- HERO -->
 <section class="f1-hero" style="--hero-img: url('/assets/img/dianeholl_back.webp');">
@@ -76,33 +77,107 @@
     <div class="f1-hero__bottom-cap-inner"></div>
   </div>
 </section>
+<!-- INTRO -->
+    <section class="content-section">
+      <p class="intro-text">
+        Diane Holl est une ingénieure spécialisée en sport automobile. Elle a contribué à la conception
+        et à l’évolution de solutions techniques majeures, dans un milieu encore largement masculin.
+      </p>
+    </section>
 
-<section class="footer">
-  <div class="footer__inner">
+    <!-- CAROUSEL 1 -->
+    <section class="carousel diane_carousel diane_carousel--one">
+      <div class="carousel__container">
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou_1.webp" alt="Diane Holl – image 1">
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou_2.webp" alt="Diane Holl – image 2">
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou_3.webp" alt="Diane Holl – image 3">
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou_4.webp" alt="Diane Holl – image 4">
+        </div>
+      </div>
 
-    <!-- Liens du haut -->
-    <nav class="footer__links">
-      <a href="/fr/a_propos.html">A propos</a>
-      <a href="/fr/termes.html">Termes et conditions</a>
-      <a href="/fr/donnees_privees.html">Données privées</a>
-    </nav>
+      <div class="carousel__controls">
+        <button class="carousel__button carousel__button--prev" aria-label="Précédent">
+          <img src="/assets/icones/arrow_left.svg" alt="">
+        </button>
+        <button class="carousel__button carousel__button--next" aria-label="Suivant">
+          <img src="/assets/icones/arrow_right.svg" alt="">
+        </button>
+      </div>
+    </section>
 
-    <!-- Icônes réseaux sociaux -->
-    <div class="footer__socials">
-      <a href="#" aria-label="Facebook">
-        <img src="/assets/icones/Facebook-Icon.svg" alt="facebook icone">
-      </a>
-      <a href="#" aria-label="Twitter">
-        <img src="/assets/icones/Twitter-Icon.svg" alt="twitter icone">
-      </a>
-      <a href="#" aria-label="YouTube">
-        <img src="/assets/icones/Youtube-Icon.svg" alt="youtube icone">
-      </a>
-      <a href="#" aria-label="LinkedIn">
-        <img src="/assets/icones/LinkedIn.svg" alt="linkedin icone">
-      </a>
-    </div>
+    <!-- TEXTE 1 -->
+    <section class="content-section">
+      <h2 class="page-h2">Carbon fiber chassis & bodywork</h2>
+      <p class="page-p">
+        Early in her career, Holl completed an internship at Reynard Motorsports where she worked on the
+        first reinforced carbon fiber chassis for Formula 3.
+      </p>
+    </section>
 
+    <!-- CAROUSEL 2 -->
+    <section class="carousel diane_carousel diane_carousel--two">
+      <div class="carousel__container">
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou2_1.webp" alt="Diane Holl – image 4">
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou2_2.webp" alt="Diane Holl – image 5">
+        </div>
+        <div class="carousel__item">
+          <img src="/assets/img/dianeholl_carou2_3.webp" alt="Diane Holl – image 6">
+        </div>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="carousel__button carousel__button--prev" aria-label="Précédent">
+          <img src="/assets/icones/arrow_left.svg" alt="">
+        </button>
+        <button class="carousel__button carousel__button--next" aria-label="Suivant">
+          <img src="/assets/icones/arrow_right.svg" alt="">
+        </button>
+      </div>
+    </section>
+
+    <!-- TEXTE 2 -->
+    <section class="content-section">
+      <h2 class="page-h2">Ses accomplissements</h2>
+      <p class="page-p">
+        Diane Holl a contribué à des projets de haut niveau en sport automobile. Son parcours illustre la difficulté,
+        pour les femmes, d’être reconnues dans les postes techniques.
+      </p>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__inner">
+        <form class="newsletter__form" novalidate>
+          <label for="nl-email" class="sr-only">Votre adresse mail</label>
+
+          <div class="newsletter__field">
+            <input
+              type="email"
+              id="nl-email"
+              class="newsletter__input"
+              placeholder="Votre adresse mail"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <button type="submit" class="newsletter__btn">Envoyer</button>
+        </form>
+
+        <p class="newsletter__msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  
     <!-- Ligne séparatrice -->
     <div class="footer__separator"></div>
 
@@ -117,4 +192,4 @@
 </section>
 
 </body>
-</html>
+</html> 
