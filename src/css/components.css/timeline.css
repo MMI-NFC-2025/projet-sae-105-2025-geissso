@@ -1,0 +1,258 @@
+/* ===== TIMELINE — EFFET MATILDA ===== */
+
+/* En-tête de section */
+.effet_matilda-timeline { 
+  margin-top: 50px;
+  width: 100%;
+  background-color: #2F2A44;
+  padding-bottom: 60px;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.effet_matilda-tl__header { 
+  background: transparent; 
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+
+
+.effet_matilda-tl__title{
+  margin: 0; 
+  font-family: "Oi", cursive; 
+  font-size: 26px; 
+  color: #EBE2F3;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+/* Corps de la timeline */
+.effet_matilda-tl__body {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Liste globale */
+.effet_matilda-tl {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ligne verticale à gauche */
+.effet_matilda-tl::before {
+  content: "";
+  position: absolute;
+  left: 31px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #EBE2F3;
+  z-index: 0;
+}
+
+/* ITEM */
+.effet_matilda-tl__item {
+  position: relative;
+  display: flex;
+  gap: 0;
+  margin-bottom: 48px;
+  z-index: 1;
+}
+
+.effet_matilda-tl__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Partie gauche : année + point */
+.effet_matilda-tl__left {
+  width: 64px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.effet_matilda-tl__year {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #EBE2F3;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Point sur la ligne */
+.effet_matilda-tl__tick {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #EBE2F3;
+  position: relative;
+  z-index: 2;
+  margin-top: 4px;
+}
+
+/* Carte de contenu */
+.effet_matilda-tl__card {
+  position: relative;
+  flex: 1;
+  padding-left: 24px;
+  padding-top: 0;
+}
+
+/* Flèche horizontale */
+.effet_matilda-tl__arrow {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 48px;
+  height: 24px;
+}
+
+.effet_matilda-tl__arrow svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Contenu : texte + photo */
+.effet_matilda-tl__row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.effet_matilda-tl__text {
+  order: 2;
+}
+
+.effet_matilda-tl__name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #EBE2F3;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.effet_matilda-tl__name span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #c9a7e4;
+}
+
+.effet_matilda-tl__role,
+.effet_matilda-tl__fact {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #EBE2F3;
+  margin-bottom: 10px;
+}
+
+.effet_matilda-tl__role strong,
+.effet_matilda-tl__fact strong {
+  color: #c9a7e4;
+  font-weight: 700;
+}
+
+/* Photo ronde */
+.effet_matilda-tl__photo {
+  order: 1;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #c9a7e4;
+  align-self: flex-start;
+}
+
+/* RESPONSIVE - Tablette et desktop */
+@media (min-width: 768px) {
+  .effet_matilda-tl__body {
+    max-width: 900px;
+    padding: 0 40px;
+  }
+
+  .effet_matilda-tl__row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .effet_matilda-tl__text {
+    order: 1;
+    flex: 1;
+  }
+
+  .effet_matilda-tl__photo {
+    order: 2;
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .effet_matilda-tl__left {
+    width: 80px;
+  }
+
+  .effet_matilda-tl::before {
+    left: 39px;
+  }
+
+  .effet_matilda-tl__year {
+    font-size: 20px;
+  }
+
+  .effet_matilda-tl__name {
+    font-size: 22px;
+  }
+
+  .effet_matilda-tl__role,
+  .effet_matilda-tl__fact {
+    font-size: 15px;
+  }
+}
+
+/* RESPONSIVE - Mobile petit */
+@media (max-width: 420px) {
+  .effet_matilda-tl__label {
+    padding-left: 15px;
+  }
+
+  .effet_matilda-tl__title {
+    font-size: 22px;
+  }
+
+  .effet_matilda-tl__body {
+    padding: 0 15px;
+  }
+
+  .effet_matilda-tl__year {
+    font-size: 16px;
+  }
+
+  .effet_matilda-tl__name {
+    font-size: 18px;
+  }
+
+  .effet_matilda-tl__name span {
+    font-size: 16px;
+  }
+
+  .effet_matilda-tl__photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .effet_matilda-tl__role,
+  .effet_matilda-tl__fact {
+    font-size: 13px;
+  }
+}

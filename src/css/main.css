@@ -1,3 +1,19 @@
+
+/* ===== RESET CSS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===== STYLES ===== */
 .matilda-card__paragraph {
     font-family: 'Montserrat', sans-serif;
     align-items: center;
@@ -1006,158 +1022,4 @@
 
 /* ===== TIMELINE — EFFET MATILDA ===== */
 
-/* En-tête */
-.effet_matilda-timeline { margin-top: 50px; }
-.effet_matilda-tl__header { background: transparent; padding: 0; }
-.effet_matilda-tl__label{
-  width:100%; height:72px; background:#2F2A44;
-  border-radius:0 82px 0 0; display:flex; align-items:center; padding-left:14px;
-}
-.effet_matilda-tl__title{
-  margin:0; font-family:"Oi",cursive; font-size:26px; color:#EBE2F3;
-  text-transform:uppercase; letter-spacing:1px;
-}
 
-/* ===== TIMELINE — EFFET MATILDA ===== */
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #ffffff;
-  color: #2F2A44;
-  padding: 0;
-  margin: 0;
-}
-
-/* SECTION TIMELINE */
-.effet_matilda-timeline {
-  max-width: 420px;               /* format colonne comme ton visuel */
-  margin: 0 auto;
-}
-
-/* Liste globale */
-.effet_matilda-tl {
-  list-style: none;
-  position: relative;
-}
-
-/* Ligne verticale à gauche */
-.effet_matilda-tl::before {
-  content: "";
-  position: absolute;
-  left: 32px;                     /* distance du bord gauche */
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #f1e5ff;            /* violet pâle */
-}
-
-/* ITEM */
-.effet_matilda-tl__item {
-  position: relative;
-  display: flex;
-  gap: 16px;
-  margin-bottom: 56px;
-}
-
-/* Partie gauche : année + point */
-.effet_matilda-tl__left {
-  width: 64px;
-  text-align: center;
-  position: relative;
-}
-
-.effet_matilda-tl__year {
-  font-size: 16px;
-  font-weight: 700;
-  color: #f1e5ff;
-  margin-bottom: 16px;
-}
-
-/* point sur la ligne */
-.effet_matilda-tl__tick {
-  position: absolute;
-  left: 50%;
-  top: 32px;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #f1e5ff;
-}
-
-/* Carte */
-.effet_matilda-tl__card {
-  position: relative;
-  background: transparent;        /* pour coller à ton design */
-  padding-left: 32px;             /* espace pour la flèche */
-}
-
-/* Flèche */
-.effet_matilda-tl__arrow {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 120px;
-}
-
-.effet_matilda-tl__arrow svg {
-  width: 100%;
-  height: auto;
-}
-
-/* Contenu texte + photo */
-.effet_matilda-tl__row {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  margin-top: 40px;               /* pour que le bloc descende sous la flèche */
-}
-
-.effet_matilda-tl__text {
-  max-width: 100%;
-}
-
-.effet_matilda-tl__name {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.effet_matilda-tl__name span {
-  font-weight: 400;
-}
-
-.effet_matilda-tl__role,
-.effet_matilda-tl__fact {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #f7f3ff;
-}
-
-/* Photo ronde avec bord violet clair */
-.effet_matilda-tl__photo {
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 8px solid #f1e5ff;
-}
-
-/* RESPONSIVE si tu élargis plus tard */
-@media (min-width: 768px) {
-  .effet_matilda-timeline {
-    max-width: 700px;
-  }
-
-  .effet_matilda-tl__row {
-    flex-direction: row;
-    align-items: center;
-  }
-}
